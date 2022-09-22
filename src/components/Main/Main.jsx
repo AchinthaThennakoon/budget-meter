@@ -1,11 +1,42 @@
-import { Card, CardHeader } from "@material-ui/core";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  Divider,
+  Grid,
+  List,
+  Typography,
+} from "@material-ui/core";
 import React from "react";
+import useStyles from "./style";
 
 const Main = () => {
+  const classes = useStyles();
   return (
     <div>
       <Card className={classes.root}>
         <CardHeader title="expense tracker" subHeader="Pwered by speechly" />
+        <CardContent>
+          <Typography align="center" variant="h5">
+            Total balance $100
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            style={{ lineHeight: "1.5cm", marginTop: "20px" }}
+          >
+            {/* infocard */}
+            add income for $100
+          </Typography>
+          <Divider />
+          {/* forms */}
+        </CardContent>
+        <CardContent className={classes.CardContent}>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              {/* <List/> */}
+            </Grid>
+          </Grid>
+        </CardContent>
       </Card>
     </div>
   );
