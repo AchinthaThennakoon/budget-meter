@@ -16,7 +16,7 @@ const Form = () => {
 
   return (
     <div>
-      <Grid>
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography align="center" variant="subtitle2" gutterBottom>
             ...
