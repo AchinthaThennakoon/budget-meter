@@ -41,16 +41,19 @@ const Form = () => {
           </FormControl>
         </Grid>
         <Grid item xs={6}>
-          <TextField type="date" label="Date" fullWidth />
-          <Button
-            className={classes.button}
-            variant="outlined"
-            color="primary"
-            fullWidth
-          >
-            Create
-          </Button>
+          <TextField type="number" label="Amount" fullWidth />
         </Grid>
+        <Grid item xs={6}>
+          <TextField type="date" label="Date" fullWidth />
+        </Grid>
+        <Button
+          className={classes.button}
+          variant="outlined"
+          color="primary"
+          fullWidth
+        >
+          Create
+        </Button>
       </Grid>
     </div>
   );
