@@ -1,6 +1,7 @@
 import { Grid } from "@material-ui/core";
 import React from "react";
 import Details from "./components/Details/Details";
+import "./style";
 
 function App() {
   return (
