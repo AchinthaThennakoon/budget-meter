@@ -15,7 +15,7 @@ const Main = () => {
   return (
     <div>
       <Card className={classes.root}>
-        <CardHeader title="expense tracker" subHeader="Pwered by speechly" />
+        <CardHeader title="expense tracker" subheader="Pwered by speechly" />
         <CardContent>
           <Typography align="center" variant="h5">
             Total balance $100
