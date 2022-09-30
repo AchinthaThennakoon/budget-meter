@@ -17,7 +17,27 @@ import { Delete, MoneyOff } from "@material-ui/icons";
 const List = () => {
   const classes = useStyles();
   const transactions = [
-    { id: 1, type: "Income", category: "Salary", amount: 50, date: new Date() },
+    {
+      id: 1,
+      type: "Income",
+      category: "Salary",
+      amount: 50,
+      date: "Sep 30 2022",
+    },
+    {
+      id: 2,
+      type: "Expense",
+      category: "Pets",
+      amount: 50,
+      date: "Sep 30 2022",
+    },
+    {
+      id: 3,
+      type: "Income",
+      category: "Business",
+      amount: 150,
+      date: "Sep 30 2022",
+    },
   ];
   return (
     <MUIList dense={false} className={classes.list}>
