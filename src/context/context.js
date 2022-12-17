@@ -3,7 +3,7 @@
 
  const initialState = [];
  
- const ExpenseTrackerContext = createContext(initialState);
+ export const ExpenseTrackerContext = createContext(initialState);
 
  export const Provider = ({children})=>{
     return(
