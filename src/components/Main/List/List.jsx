@@ -13,9 +13,16 @@ import {
 
 import useStyles from "./styles";
 import { Delete, MoneyOff } from "@material-ui/icons";
+import { useContext } from "react";
+
+import { ExpenseTrackerContext } from "../../../context/context";
 
 const List = () => {
   const classes = useStyles();
+
+  const globalState = useContext(ExpenseTrackerContext);
+  console.log(globalState);
+
   const transactions = [
     {
       id: 1,
